@@ -37,7 +37,7 @@ Run the following commands to evaluate the given checkpoint:
 ```
 python tools/test.py [config] [checkpoint] --show-dir [output_dir] --show(optional)
 ```
-You can append `--show` to generate visualization results in the `output_dir/vis_image`.
+You can append `--show` to generate visualization results in the `output_dir/vis_image`. 
 
 ## Training
 **1.** For single-gpu trainning, run the following command:
@@ -50,6 +50,12 @@ python tools/train.py [config]
 bash tools/dist_train.sh [config] [num_gpu]
 ```
 The default config is ./configs/deeplabv3plus/deeplabv3plus_r101-d8_4xb4-80k_uecfoodpix-320x320.py
+
+For example:
+```
+python tools/train.py ./configs/deeplabv3plus/deeplabv3plus_r101-d8_4xb4-80k_uecfoodpix-320x320.py
+bash tools/dist_train.sh ./configs/deeplabv3plus/deeplabv3plus_r101-d8_4xb4-80k_uecfoodpix-320x320.py 2
+```
 
 ## Results
 
