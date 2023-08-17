@@ -32,6 +32,24 @@ cd Foodseg-uecfoodpix
 pip install -e .  # or "python setup.py develop"
 ```
 
+## Testing
+Run the following commands to evaluate the given checkpoint:
+```
+python tools/test.py [config] [checkpoint] --show-dir [output_dir] --show(optional)
+```
+You can append `--show` to generate visualization results in the `output_dir/vis_image`.
+
+## Training
+**1.** For single-gpu trainning, run the following command:
+```
+python tools/train.py [config]
+```
+
+**2.** For multi-gpu training, run the following commands:
+```
+bash tools/dist_train.sh [config] [num_gpu]
+```
+
 
 ## Results
 
