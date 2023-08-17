@@ -25,7 +25,7 @@ c. Install MMCV following the [official instructions](https://mmcv.readthedocs.i
 pip install mmcv-full -f https://download.openmmlab.com/mmcv/dist/{cu_version}/{torch_version}/index.html
 ```
 
-d. final
+d. Clone this repo.
 ```
 git clone https://github.com/HitBadTrap/Foodseg-uecfoodpix.git
 cd Foodseg-uecfoodpix
