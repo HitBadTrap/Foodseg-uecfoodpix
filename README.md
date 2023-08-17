@@ -53,9 +53,9 @@ The default config is ./configs/deeplabv3plus/deeplabv3plus_r101-d8_4xb4-80k_uec
 
 ## Results
 
-| Method | mIou | aAcc | mAcc | Model | Training Log | Config
+| Method | mIou | aAcc | mAcc | Model | Training Log
 | :-: | :- | -: | :-: | :-: | :-: | :-: |
-|deeplabV3+ (baseline)| 65.61 |88.20| 77.56 | [Link](https://pan.baidu.com/s/19SoqvSsk5ID0r00V-uQlMg?pwd=kq4y) | [Link](https://pan.baidu.com/s/1el12UBxf_DaPoI0AfzvC_w?pwd=v1xa) | [Link](https://pan.baidu.com/s/1fI4D6jt6k9hZ2w9Yu3OQUg?pwd=7oa6)
+|deeplabV3+ (baseline)| 65.61 |88.20| 77.56 | [Link](https://pan.baidu.com/s/19SoqvSsk5ID0r00V-uQlMg?pwd=kq4y) | [Link](https://pan.baidu.com/s/1el12UBxf_DaPoI0AfzvC_w?pwd=v1xa)
 FoodSAM | 66.14 |88.47 |78.01 |    |    |
 
 ## Acknowledgements
