@@ -1,8 +1,7 @@
 # Foodseg-uecfoodpix
 
-
-This repo holds the code for uecfoodpix dataset in [FoodSAM: Any Food Segmentation](https://arxiv.org/abs/2308.05938).
-
+This repo implements the deeplabv3+ training for UECFoodPIX complete dataset.
+And this repository implements the baseline for [FoodSAM: Any Food Segmentation](https://arxiv.org/abs/2308.05938).
 
 ## Installation
 a. Create a conda virtual environment and activate it.
@@ -40,7 +39,7 @@ python tools/test.py [config] [checkpoint] --show-dir [output_dir] --show(option
 You can append `--show` to generate visualization results in the `output_dir/vis_image`. 
 
 ## Training
-**1.** For single-gpu trainning, run the following command:
+**1.** For single-gpu training, run the following command:
 ```
 python tools/train.py [config]
 ```
@@ -51,9 +50,12 @@ bash tools/dist_train.sh [config] [num_gpu]
 ```
 The default config is ./configs/deeplabv3plus/deeplabv3plus_r101-d8_4xb4-80k_uecfoodpix-320x320.py
 
-For example:
+For our training example:
 ```
+# single-gpu training
 python tools/train.py ./configs/deeplabv3plus/deeplabv3plus_r101-d8_4xb4-80k_uecfoodpix-320x320.py
+
+# multi-gpu training
 bash tools/dist_train.sh ./configs/deeplabv3plus/deeplabv3plus_r101-d8_4xb4-80k_uecfoodpix-320x320.py 2
 ```
 
@@ -63,6 +65,7 @@ bash tools/dist_train.sh ./configs/deeplabv3plus/deeplabv3plus_r101-d8_4xb4-80k_
 | :-: | :- | -: | :-: | :-: | :-: |
 |deeplabV3+ (baseline)| 65.61 |88.20| 77.56 | [Link](https://pan.baidu.com/s/19SoqvSsk5ID0r00V-uQlMg?pwd=kq4y) | [Link](https://pan.baidu.com/s/1el12UBxf_DaPoI0AfzvC_w?pwd=v1xa)
 FoodSAM | 66.14 |88.47 |78.01 |    |    |
+
 
 ## Acknowledgements
 
