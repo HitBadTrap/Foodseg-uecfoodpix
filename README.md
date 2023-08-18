@@ -38,6 +38,11 @@ python tools/test.py [config] [checkpoint] --show-dir [output_dir] --show(option
 ```
 You can append `--show` to generate visualization results in the `output_dir/vis_image`. 
 
+For our testing example:
+```
+python tools/test.py ./configs/deeplabv3plus/deeplabv3plus_r101-d8_4xb4-80k_uecfoodpix-320x320.py [checkpoint] --show-dir [output_dir] --show(optional)
+```
+
 ## Training
 **1.** For single-gpu training, run the following command:
 ```
